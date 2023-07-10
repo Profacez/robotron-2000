@@ -1,8 +1,6 @@
 
-//depois do curso, adicionar função para alterar a cor do robô
 
-
-const subtrair = document.querySelector('#subtrair')
+const subtrair = document.querySelector('#subtrair')  
 const somar = document.querySelector('#somar')
 const controle = document.querySelectorAll("[data-controle]")
 const estatisticas = document.querySelectorAll("[data-estatistica]")
