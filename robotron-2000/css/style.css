@@ -21,14 +21,14 @@ body, input {
     font-family: 'Teko', sans-serif;
 }
 
-.flechaDireita{
+#flechaDireita{
     width: 40px;
     position: absolute;
     left: 40%;
     z-index: 100;
     bottom: -10%;
 }
-.flechaEsquerda{
+#flechaEsquerda{
     position: absolute;
     left: 30%;
     bottom: -10%;

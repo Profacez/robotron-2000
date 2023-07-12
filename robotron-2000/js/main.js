@@ -4,6 +4,29 @@ const subtrair = document.querySelector('#subtrair')
 const somar = document.querySelector('#somar')
 const controle = document.querySelectorAll("[data-controle]")
 const estatisticas = document.querySelectorAll("[data-estatistica]")
+const flechas = document.querySelectorAll("[data-flechas]")
+const cores = ['preto','amarelo','azul','vermelho','rosa','branco']
+let corAtual = 'preto';
+
+function alterarImagem(n){
+
+ let robo = document.querySelector('#robot')
+ let i = cores.indexOf(corAtual)
+
+ if(n === 'direita' && i != 5){corAtual = cores[i+1]}
+ if(n === 'esquerda' && i != 0){corAtual = cores[i-1]}
+
+ robo.src = 'img/'+ corAtual + '.png'
+}
+
+flechas.forEach( (elemento) => {
+    elemento.addEventListener ('click', (evento) => {
+ if(elemento.id === 'flechaDireita'){alterarImagem('direita')}
+ else alterarImagem('esquerda')
+
+    })
+})
+
 
 
 controle.forEach( (elemento) => {
